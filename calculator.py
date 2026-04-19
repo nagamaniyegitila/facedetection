@@ -10,8 +10,6 @@ def buttonclick(number):
     current=e.get()
     e.delete(0, END)
     e.insert(0,str (current) + str(number))
-def clear():
-    e.delete(0, END)
 def buttonadd():
     firstnum=e.get()
     global fnum
@@ -53,6 +51,7 @@ def div():
     firstnum=e.get()
     global fnum
     global math
+    math= "div"
     return
 def pow():
     firstnum=e.get()
